@@ -1,0 +1,202 @@
+:root {
+    --ink: #16241f;
+    --panel: #1f3b30;
+    --paper: #eff3ee;
+    --card: #ffffff;
+    --teal: #2f7a5d;
+    --teal-soft: #3d9573;
+    --mustard: #d9a441;
+    --text-light: #eaf0eb;
+    --text-dark: #16241f;
+    --text-muted: #57685f;
+    --line: rgba(22, 36, 31, 0.14);
+
+    --font-display: "Fraunces", "Georgia", serif;
+    --font-body: "Work Sans", "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", "Consolas", monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background-color: var(--paper);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.18;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+p {
+    max-width: 60ch;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section {
+    padding: 96px 0;
+}
+
+.tag-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--teal);
+    border: 1px solid var(--teal);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+.tag-label::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--mustard);
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 26px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--teal);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--teal-soft);
+}
+
+.btn-ghost {
+    border-color: rgba(234, 240, 235, 0.4);
+    color: var(--text-light);
+    background: transparent;
+}
+
+.btn-ghost:hover {
+    border-color: var(--mustard);
+    color: var(--mustard);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    padding: 12px 14px;
+    border: 1px solid rgba(234, 240, 235, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-light);
+    border-radius: 2px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--mustard);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    align-self: flex-start;
+}
+
+.hero,
+.contact {
+    color: var(--text-light);
+}
+
+.hero .lede {
+    margin-top: 18px;
+    color: rgba(234, 240, 235, 0.85);
+}
+
+@media (max-width: 760px) {
+    .section {
+    padding: 64px 0;
+    }
+}
