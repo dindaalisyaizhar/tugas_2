@@ -1,93 +1,41 @@
-.hero,
-.contact {
-    background-color: var(--ink);
-    background-image: url("../src/grid-paper.svg");
-    background-repeat: repeat;
-    background-position: top left;
-    background-attachment: scroll;
-}
-
-.about-photo {
+.hero {
     position: relative;
-    transform: rotate(-2deg);
+    isolation: isolate;
 }
-
-.about-photo img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border: 10px solid var(--card);
-    border-bottom-width: 34px;
-    box-shadow:
-        0 14px 30px rgba(22, 36, 31, 0.16);
-    opacity: 0.92;
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease;
-}
-
-.about-photo img:hover {
-    opacity: 1;
-    transform: scale(1.015);
-}
-
-.about-photo::after {
+.hero::before {
     content: "";
     position: absolute;
-    top: -14px;
-    left: 50%;
-    width: 64px;
-    height: 24px;
-    background-color: rgba(217, 164, 65, 0.55);
-    transform:
-        translateX(-50%)
-        rotate(3deg);
-    border: 1px solid rgba(217, 164, 65, 0.7);
+    inset: 0;
+    z-index: -1;
+    background-image:
+        url("../src/grid-paper.svg");
+    background-size: 500px;
+    opacity: 0.25;
+    pointer-events: none;
 }
-
-
-.notebook {
-    background-color: var(--paper);
-    color: var(--text-dark);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    padding: 0;
+.hero-panel {
+    position: relative;
+}
+.hero-panel::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: var(--mustard);
+    opacity: 0.25;
+    z-index: -1;
+}
+.about-image {
+    position: relative;
     overflow: hidden;
-    transform: rotate(1.3deg);
-    box-shadow:
-        0 18px 34px rgba(0, 0, 0, 0.28);
 }
-
-.notebook-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px;
-    background-color: rgba(22, 36, 31, 0.06);
-    border-bottom: 1px solid var(--line);
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    color: var(--text-muted);
-}
-
-.notebook-body {
-    padding: 22px;
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    line-height: 1.9;
-}
-
-.notebook-body .k {
-    color: var(--teal);
-}
-
-.notebook-body .v {
-    color: var(--text-dark);
-}
-
-.contact-form {
-    background-color: rgba(234, 240, 235, 0.07);
-    border: 1px solid rgba(234, 240, 235, 0.16);
-    padding: 32px;
-    border-radius: 4px;
+.about-image::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: var(--mustard);
+    opacity: 0.15;
 }
