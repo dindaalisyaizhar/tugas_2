@@ -48,7 +48,10 @@
     padding: 8px 14px;
     border-radius: 4px 4px 0 0;
     border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.15s ease;
 }
 
 #menu > ul > li > a:hover {
@@ -66,24 +69,15 @@
     border: 1px solid var(--line);
     border-radius: 4px;
     padding: 8px 0;
-    box-shadow: 0 10px 24px rgba(22, 36, 31, 0.08);
+    box-shadow:
+        0 10px 24px rgba(22, 36, 31, 0.08);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-6px);
-    transition: opacity 0.2s ease 0.05s, transform 0.2s ease 0.05s, visibility 0.2s ease 0.05s;
-}
-
-.has-dropdown .dropdown::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 22px;
-    width: 10px;
-    height: 10px;
-    background-color: var(--card);
-    border-left: 1px solid var(--line);
-    border-top: 1px solid var(--line);
-    transform: rotate(45deg);
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
 }
 
 .has-dropdown:hover .dropdown {
@@ -127,7 +121,9 @@
 .footer-nav a {
     text-decoration: none;
     opacity: 0.75;
-    transition: opacity 0.2s ease, color 0.2s ease;
+    transition:
+        opacity 0.2s ease,
+        color 0.2s ease;
 }
 
 .footer-nav a:hover {
@@ -137,16 +133,18 @@
 
 @media (max-width: 640px) {
     #menu > ul {
-    gap: 2px;
+
+        gap: 2px;
+
     }
 
     #menu > ul > li > a {
-    padding: 8px 8px;
-    font-size: 0.82rem;
+        padding: 8px;
+        font-size: 0.82rem;
     }
 
     .has-dropdown .dropdown {
-    left: auto;
-    right: 0;
+        left: auto;
+        right: 0;
     }
 }
