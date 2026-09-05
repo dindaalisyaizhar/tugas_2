@@ -1,51 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home — Dinda Alisya Izhar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-    <section id="home" class="section hero">
-    <div class="container hero-grid">
-        <div class="hero-text">
-        <p class="tag-label" style="border-color:rgba(234,240,235,0.4); color:var(--text-light);">mahasiswa teknik komputer</p>
-        <h1>Dinda Alisya Izhar</h1>
-        <p class="lede">
-            Mahasiswa Teknik Komputer semester 3 yang sedang mengembangkan
-            kemampuan di bidang pemrograman web. Tertarik mempelajari HTML,
-            CSS, dan berbagai teknologi web untuk membuat halaman yang rapi,
-            sederhana, dan mudah digunakan.
-        <div class="hero-actions">
-            <a href="#experience" class="btn btn-primary">Lihat Pengalaman</a>
-            <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
-        </div>
-        </div>
-        <div class="hero-panel">
-        
-<div class="hero-panel">
-        <div class="notebook">
-            <div class="notebook-bar">
-            <span>profil-dinda.txt</span>
-            <span>●</span>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- HOME -->
+    <main>
+        <section class="section hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p
+                        class="tag-label"
+                        style="border-color:rgba(234,240,235,0.4); color:var(--text-light);"
+                    >
+                        mahasiswa teknik komputer
+                    </p>
+
+                    <h1>
+                        Dinda Alisya Izhar
+                    </h1>
+
+                    <p class="lede">
+                        Mahasiswa Teknik Komputer semester 3 yang sedang
+                        mengembangkan kemampuan di bidang pemrograman web.
+                        Tertarik mempelajari HTML, CSS, dan berbagai teknologi
+                        web untuk membuat halaman yang rapi, sederhana, dan
+                        mudah digunakan.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a
+                            href="experience.html"
+                            class="btn btn-primary"
+                        >
+                            Lihat Proyek
+                        </a>
+                        <a
+                            href="contact.html"
+                            class="btn btn-ghost"
+                        >
+                            Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-panel">
+                    <div class="notebook">
+                        <div class="notebook-bar">
+                            <span>profil-dinda.txt</span>
+                            <span>●</span>
+                        </div>
+                        <div class="notebook-body">
+                            <div>
+                                <span class="k">nama</span> :
+                                <span class="v">
+                                    Dinda Alisya Izhar
+                                </span>
+                            </div>
+                            <div>
+                                <span class="k">status</span> :
+                                <span class="v">
+                                    Mahasiswa Semester 3
+                                </span>
+                            </div>
+                            <div>
+                                <span class="k">jurusan</span> :
+                                <span class="v">
+                                    Teknik Komputer
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="notebook-body">
-            <div>
-                <span class="k">nama</span> :
-                <span class="v">Dinda Alisya Izhar</span>
-            </div>
-            <div>
-                <span class="k">status</span> :
-                <span class="v">Mahasiswa Semester 3</span>
-            </div>
-            <div>
-                <span class="k">jurusan</span> :
-                <span class="v">Teknik Komputer</span>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </section>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <script src="js/include.js"></script>
+
 </body>
 </html>
