@@ -25,16 +25,16 @@ img {
 }
 
 :root {
-    --ink: #16241f;
-    --panel: #1f3b30;
-    --paper: #eff3ee;
-    --card: #ffffff;
-    --teal: #2f7a5d;
-    --teal-soft: #3d9573;
-    --mustard: #d9a441;
-    --text-light: #eaf0eb;
-    --text-dark: #16241f;
-    --text-muted: #57685f;
+    --ink: #4A3428;
+    --panel: #6B4A38;
+    --paper: #F5EDE2;
+    --card: #FFF9F0;
+    --teal: #6B4A38;
+    --teal-soft: #8B6A55;
+    --mustard: #B8956A;
+    --text-light: #FFF9F0;
+    --text-dark: #4A3428;
+    --text-muted: #756459;
 }
 
 main {
